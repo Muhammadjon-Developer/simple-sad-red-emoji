@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.ball {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50%;
+    filter: drop-shadow(20px 20px 22px red);
+}
+
+.ball span {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 32px;
+    box-shadow: 75px 0 0 #fff;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.ball i {
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 70px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+.ball:hover ~ i {
+    position: absolute;
+    background-color: lime;
+    transition: 0.5s;
+    filter: drop-shadow(20px 20px 22px lime);
+    top: 200px;
+    left: 110px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
